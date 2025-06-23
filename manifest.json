@@ -1,0 +1,20 @@
+{
+  "name": "ROS",
+  "short_name": "ROS",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#302b63",
+  "theme_color": "#302b63",
+  "icons": [
+    {
+      "src": "ROS_Fav_Icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ROS_Fav_Icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
