@@ -116,6 +116,19 @@
       transform: scale(1.2);
     }
   </style>
+  <script>
+    // Animated dots using JS
+    document.addEventListener("DOMContentLoaded", function() {
+      const dotsSpan = document.querySelector('.animated-dots');
+      if (dotsSpan) {
+        let count = 0;
+        setInterval(() => {
+          count = (count + 1) % 4;
+          dotsSpan.textContent = '.'.repeat(count);
+        }, 400);
+      }
+    });
+  </script>
 </head>
 <body>
   <div class="container">
@@ -130,9 +143,6 @@
 </form>
 
     <div class="social">
-      <!--<a href="https://instagram.com/sabjiwalabfs" title="Facebook">🌐</a>-->
-      <!--<a href="#" title="Twitter">🐦</a>-->
-      <!--<a href="#" title="Instagram">📸</a>-->
       <a href="https://www.instagram.com/sabjiwala.bfs/" 
    title="Instagram" 
    target="_blank" 
@@ -159,6 +169,38 @@
 
       
     </div>
+    <div style="margin-top: 1rem;"></div>
+    <div style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.7rem; color: #ffb347; letter-spacing: 0.5px;">
+      Look what we just dropped<span class="animated-dots"></span>
+    </div>
+    <div>
+      <a href="https://info.republicofsabjiwala.com" 
+       title="Republic of Sabjiwala" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none;">
+      <img src="ROS_favicon.svg" 
+       alt="Republic of Sabjiwala" 
+       width="32px" 
+       height="32px" 
+       class="ros-animated-icon"
+       
+       />
+      </a>
+    </div>
+    <style>
+      .ros-animated-icon {
+      animation: ros-pop 1.2s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+      }
+      @keyframes ros-pop {
+      0%   { transform: scale(1);}
+      50%  { transform: scale(1.18);}
+      100% { transform: scale(1);}
+      }
+      .animated-dots {
+      position: relative;
+      }
+    </style>
   </div>
 
   <script>
